@@ -13,4 +13,10 @@ describe("basket", function(){
     assert.deepEqual([item_one, item_two], basket.add_item(item_two))
   });
 
+  it("should be able to return a list of the names in its holder", function(){
+    assert.deepEqual(["travel mug", "5 person tent"], basket.items_list())
+  });
+
+
+
 });
