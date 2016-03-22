@@ -12,6 +12,12 @@ var basket = {
       list.push(item.name)
     };
     return list
+  },
+  item_list: function(item_name){
+    for (item of this.holder){
+      if (item.name === item_name);
+        return item;
+    }
   }
 };
 
