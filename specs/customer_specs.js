@@ -11,6 +11,9 @@ describe("customer", function(){
     assert.equal("Joe Bloggs", customer.name);
   });
 
+  it("should be able to take in a basket", function(){
+    assert.deepEqual(basket.holder, customer.add_basket(basket))
+  });
 
 
 
