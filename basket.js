@@ -1,6 +1,6 @@
 var basket = {
   holder: [],
-  add_items: function(item){
+  add_item: function(item){
     this.holder.push(item);
     return this.holder
   }
