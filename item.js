@@ -1,11 +1,12 @@
-var item = {
-  name: "travel mug"
+var item1 = {
+  name: "travel mug",
+  cost: 5.99
 }
 
 
 
 
-module.exports = item
+module.exports = item1;
 
 
 
