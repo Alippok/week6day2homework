@@ -7,9 +7,9 @@ var basket = {
     return this.holder;
   },
   items_list: function(){
-    var list = []
+    var list = [];
     for (item of this.holder){
-      list.push(item.name)
+      list.push(item.name);
     };
     return list
   },
@@ -18,6 +18,13 @@ var basket = {
       if (item.name === item_name);
         return item;
     }
+  },
+  total_price: function(){
+    var total = 0
+    for (item of this.holder){
+      total += item.cost
+    }
+    return total.toFixed(2)
   }
 };
 

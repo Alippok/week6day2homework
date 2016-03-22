@@ -20,7 +20,10 @@ describe("basket", function(){
 
   it("should be able to list a specific items details", function(){
     assert.deepEqual({name: "travel mug", cost: 5.99}, basket.item_list("travel mug"))
-  })
-
+  });
+  
+  it("should be able to return a total price of all items", function(){
+    assert.equal(45.98, basket.total_price())
+  });
 
 });
