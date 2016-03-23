@@ -16,4 +16,8 @@ describe("Checkout", function(){
     assert.deepEqual(["travel mug", "5 person tent"], checkout.basket_check())
   });
 
+  it("should be able to see total price of the customers basket", function(){
+    assert.equal(45.98, checkout.basket_price())
+  });
+
 });

@@ -6,6 +6,9 @@ var checkout = {
   },
   basket_check: function(){
     return this.customer.basket_items();
+  },
+  basket_price: function(){
+    return this.customer.basket_total();
   }
 
 
