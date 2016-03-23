@@ -19,9 +19,9 @@ describe("customer", function(){
     assert.deepEqual(["travel mug", "5 person tent"], customer.basket_items())
   });
 
-  // it("should be able to add an item to its basket", function(){
-  //   assert.deepEqual([item_two], customer.add_item(item_two))
-  // });
+  it("should be able to add an item to its basket", function(){
+    assert.deepEqual([item_one, item_two, item_three], customer.add_item(item_three))
+  });
 
 
 
