@@ -11,6 +11,9 @@ var customer = {
   },
   basket_items: function(){
     return this.basket.items_list();
+  },
+  basket_total: function(){
+    return this.basket.total_price();
   }
 
 };
