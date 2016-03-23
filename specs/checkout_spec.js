@@ -12,5 +12,8 @@ describe("Checkout", function(){
     assert.equal("Joe Bloggs", checkout.add_customer(customer))
   });
 
+  it("should be able to check items in customers basket", function(){
+    assert.deepEqual(["travel mug", "5 person tent"], checkout.basket_check())
+  });
 
 });
